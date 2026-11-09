@@ -36,43 +36,44 @@ Students compare a run sheet, volunteer handover notes, and timestamped playback
 
 **Why it could work:** A lively event setting with a natural timeline. The files need a carefully designed answer key so several plausible explanations do not become equally likely.
 
-## Recommended starting point: The missing maker-fair mascot
+## Current prototype: The parade that wouldn't stay on route
 
-This seems the strongest first prototype: it has a simple central question, supports multiple Python skills, and makes it natural to distinguish a confirmed fact from an assumption. Keep the core investigation to three or four files:
+At a warm, slightly chaotic pop-up festival, the parade makes three unexpected stops and arrives late. Students are data detectives asked to work out whether the detours were random or deliberate. The working reveal is that each detour visits a place where Mira Chen, a quiet fixer, solved a problem shortly beforehand. A note released later hints that the stops were planned as a thank-you.
 
-| File | Example fields | Useful data wrinkle |
+The generator is `scripts/generate_data.py`. It uses only Python's standard library and writes these files:
+
+| File | Purpose | Data wrinkle |
 | --- | --- | --- |
-| `equipment_log.csv` | item, person, room, checked_out, returned | Inconsistent item and room names; one duplicate row |
-| `event_schedule.csv` | activity, room, start_time, end_time | A few times use different formats |
-| `volunteer_notes.csv` | time, location, note | Missing time on one note; short clue text |
-| `room_directory.csv` | room_code, display_name | Maps room codes to names used in other files |
-
-The core answer should be recoverable by cleaning names and times and comparing the event timeline with the equipment log. Include enough evidence to identify the mascot's last confirmed location, but do not claim a precise final location unless a record supports it.
+| `data/planned_route.csv` | The published parade schedule | Baseline for comparison |
+| `data/parade_log.csv` | What marshals recorded on the day | Unsorted rows, a duplicate entry, mixed time formats, and alternate place names |
+| `data/volunteer_help.csv` | Problems volunteers solved around the festival | Alternate place names and one missing helper name |
+| `data/location_aliases.csv` | Maps recorded place names to shared names | Students can use a dictionary or join to reconcile locations |
+| `data/new_evidence/finale_note.csv` | A clue about the reason for the detours | Hold back until students have formed an initial theory |
 
 ### Possible student path
 
-1. Read each file and inspect row counts, columns, and a few example values.
-2. Find missing values, duplicate records, and inconsistent room or item names.
-3. Use a small function to normalize a room name or timestamp; use a dictionary to map room codes.
-4. Compare the cleaned records to find the mascot's last confirmed location and the relevant activities.
-5. Make a simple timeline or bar chart and write a short finding with one uncertainty.
+1. Compare the planned route with the parade log and identify the three unexpected stops.
+2. Remove the duplicate log entry and put mixed-format times in order.
+3. Use the location aliases to compare parade stops with the volunteer-help records.
+4. Notice that Mira helped at each detour location shortly before the parade arrived.
+5. Read the finale note and explain the likely thank-you, separating evidence from assumption.
 
 ### Hints and stretch ideas
 
-- **Hint 1:** Start with the equipment log and filter for the mascot.
-- **Hint 2:** Room labels that look different may refer to the same room; check the room directory.
-- **Stretch:** Compare planned and actual event timing, or write a function that flags records with missing or inconsistent values.
+- **Hint 1:** Find rows in the parade log where the event is `Unexpected stop`.
+- **Hint 2:** The same place can appear under different names in different files; check `location_aliases.csv`.
+- **Stretch:** Make a timeline of help and parade events, or write a function that standardizes the different timestamp formats.
 
 ### Answer-key guardrails
 
-- Write the intended conclusion before generating the data, then generate records to support it consistently.
-- Mark which records are confirmed evidence, which are clues, and which are intentionally unreliable.
-- Avoid requiring students to guess a person's motive or treat a missing record as proof.
-- Keep a clean source version of each dataset so the answer key can explain every introduced data issue.
+- The three unexpected stops are the Paper Plane Tent, Repair Cafe, and Oak Corner; each has a nearby help record for Mira.
+- The finale note supports the thank-you interpretation, but students should cite the records rather than infer anyone's motive from a missing value.
+- Keep `finale_note.csv` separate from the first evidence bundle so the reveal can be timed during the workshop.
 
 ## Decisions to make next
 
-- Confirm whether the maker-fair story fits the audience and workshop length.
-- Decide if students investigate only the last confirmed location or also receive a later recovery clue.
-- Set a target dataset size that leaves room for manual Python exploration before introducing Pandas.
-- Draft the answer key and test the mystery before producing the student-facing files.
+- Confirm the parade story and whether the thank-you reveal works for the audience.
+- Confirm workshop length and student prerequisites.
+- Finalize the core task, hints, and stretch challenges.
+- Validate the generated records against a facilitator answer key.
+- Try the workshop from a student perspective.

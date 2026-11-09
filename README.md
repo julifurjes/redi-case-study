@@ -2,7 +2,7 @@
 
 A playful investigation workshop for students in the final third of an introductory Python course.
 
-**Status: planning.** The final case study, story, workshop length, and datasets are still to be decided.
+**Status: early prototype.** A fictional festival-parade story and CSV generator are in place; the workshop length, exercises, and final answer key are still to be decided.
 
 Students will use Python to explore evidence, clean messy data, and explain what they find. The aim is a fun mystery with a clear payoff and room for different approaches.
 
@@ -24,7 +24,7 @@ scripts/     Dataset generation and supporting Python scripts
 docs/        Case brief, workshop plan, and teaching notes
 ```
 
-Data, notebooks, and scripts are still placeholders. There are no datasets, exercises, or runnable workshop materials yet. Early story and dataset concepts are in the [workshop idea bank](docs/idea-bank.md).
+The parade CSVs are an initial data prototype. The [student case brief](docs/student-brief.md) and [Python investigation starter](notebooks/investigation_starter.py) are ready; guided exercises are still in development. Early story and dataset notes are in the [workshop idea bank](docs/idea-bank.md).
 
 ## Workshop design
 
@@ -36,14 +36,26 @@ Data, notebooks, and scripts are still placeholders. There are no datasets, exer
 
 ## Getting started
 
-No installation is required to review the repository at this stage. Python setup instructions and dependencies will be added when the exercises are defined.
+The generator uses only Python's standard library. From the repository root, run:
+
+```bash
+python3 scripts/generate_data.py
+```
+
+This writes the core CSVs to `data/` and the staged finale clue to `data/new_evidence/`. Use `--seed` to change the order of unsorted records or `--output-dir` to choose another destination.
+
+Run the dataset consistency checks with:
+
+```bash
+python3 -m unittest discover -s tests -v
+```
 
 ## Next decisions
 
-- [ ] Choose the mystery and its resolution.
+- [ ] Confirm the parade mystery and finalize its resolution.
 - [ ] Confirm workshop length and student prerequisites.
 - [ ] Define the core task, hints, and stretch challenges.
-- [ ] Create fictional datasets with a consistent answer key.
+- [ ] Review the generated fictional datasets against a consistent answer key.
 - [ ] Add student instructions and starter code.
 - [ ] Decide how facilitator solutions will be kept separate from student materials.
 - [ ] Try the workshop from a student perspective.
