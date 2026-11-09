@@ -24,7 +24,7 @@ scripts/     Dataset generation and supporting Python scripts
 docs/        Case brief, workshop plan, and teaching notes
 ```
 
-These folders are placeholders. There are no datasets, exercises, or runnable workshop materials yet.
+Data, notebooks, and scripts are still placeholders. There are no datasets, exercises, or runnable workshop materials yet. Early story and dataset concepts are in the [workshop idea bank](docs/idea-bank.md).
 
 ## Workshop design
 
