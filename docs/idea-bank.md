@@ -36,6 +36,14 @@ Students compare a run sheet, volunteer handover notes, and timestamped playback
 
 **Why it could work:** A lively event setting with a natural timeline. The files need a carefully designed answer key so several plausible explanations do not become equally likely.
 
+### The festival fund fiasco
+
+**Question:** Why is the festival fund short of the money needed to pay the DJ, and what happened to the money?
+
+The DJ wants paying, 87 inflatable flamingos have arrived, and the committee's group chat is full of excuses. Students compare a payment export, receipts, and short chat messages. They clean inconsistent names, payment statuses, and amount formats; remove duplicate export rows; and reconcile completed money in and out. A pending flamingo refund and a speaker deposit that has not yet been returned can explain the apparent shortfall, while a suspicious reimbursement gives students a misleading clue to check against the records. The answer key should distinguish money available now from money that might arrive later, without treating confusion or suspicious timing as proof of theft.
+
+**Why it could work:** A comic financial whodunnit with a familiar shared-fund setting and a clear numerical payoff. A small three-file case could fit about 30 minutes after week 9, using basic Python or Pandas and data cleaning, with no required charts. Keep the refund and deposit rules explicit so the challenge is following evidence rather than knowing accounting or a real payment service's behaviour.
+
 ## Recommended starting point: The missing maker-fair mascot
 
 This seems the strongest first prototype: it has a simple central question, supports multiple Python skills, and makes it natural to distinguish a confirmed fact from an assumption. Keep the core investigation to three or four files:
