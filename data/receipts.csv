@@ -1,0 +1,7 @@
+receipt_id,reference,buyer,vendor,amount_dkk,status,description,expected_date
+REC-001,FLAMINGOS-01,Festival Fund,Party Nest,870.00,paid,87 inflatable flamingos; return approved separately,2026-06-05
+REC-002,SPEAKER-01,Oliver Falk,Sound Sprout,600.00,paid,Refundable speaker security deposit paid personally by Oliver,2026-06-06
+REC-003,SNACKS-01,Festival Fund,Snack Shed,900.00,paid,Snacks for festival,2026-06-07
+REC-004,POSTERS-01,Festival Fund,Paper Parade,300.00,paid,Poster printing,2026-06-08
+REC-005,SUPPLIES-01,Festival Fund,Useful Things,200.00,paid,Tape and cable covers,2026-06-08
+REC-006,DJ-01,Festival Fund,DJ Comet,2500.00,unpaid,DJ set; payment due before performance,2026-06-12

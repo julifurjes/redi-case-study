@@ -1,0 +1,40 @@
+payment_id,timestamp,sender,recipient,amount_dkk,status,reference,message
+PAY-001,2026-06-01T10:00:00, Alma Jensen ,Festival Fund,"150,00",completed,TICKET-001,Festival ticket
+PAY-002,2026-06-01T10:15:00,Noah Holm,Festival Fund,150.00,COMPLETED,TICKET-002,See you there
+PAY-003,2026-06-01T11:00:00,Freja Lund,Festival Fund,"150,00",completed,TICKET-003,Festival ticket
+PAY-004,2026-06-01T11:30:00,Oscar Berg,Festival Fund,150.00,completed,TICKET-004,Festival ticket
+PAY-005,2026-06-01T12:00:00,Clara Dahl,Festival Fund,150.00,Completed,TICKET-005,Festival ticket
+PAY-006,2026-06-01T12:30:00,William Bak,Festival Fund,"150,00",completed,TICKET-006,Festival ticket
+PAY-007,2026-06-01T13:00:00, Ella Vang,Festival Fund,150.00,completed,TICKET-007,Festival ticket
+PAY-008,2026-06-01T13:30:00,Oliver Falk,Festival Fund,150.00,COMPLETED,TICKET-008,My ticket
+PAY-009,2026-06-01T14:00:00,Sofia Lind,Festival Fund,"150,00",completed,TICKET-009,Festival ticket
+PAY-010,2026-06-01T14:30:00,Lucas Skov,Festival Fund,150.00,completed,TICKET-010,Festival ticket
+PAY-011,2026-06-02T09:00:00,Ida Storm,Festival Fund,150.00,completed,TICKET-011,Festival ticket
+PAY-012,2026-06-02T09:30:00,Malthe Bo,Festival Fund,"150,00",Completed,TICKET-012,Festival ticket
+PAY-013,2026-06-02T10:00:00,Agnes Friis,Festival Fund,150.00,completed,TICKET-013,Festival ticket
+PAY-014,2026-06-02T10:30:00,Emil Sand,Festival Fund,150.00,COMPLETED,TICKET-014,Festival ticket
+PAY-015,2026-06-02T11:00:00,Laura Munk,Festival Fund,"150,00",completed,TICKET-015,Festival ticket
+PAY-016,2026-06-02T11:30:00,Viggo Dal,Festival Fund,150.00,completed,TICKET-016,Festival ticket
+PAY-017,2026-06-02T12:00:00,Anna Birk ,Festival Fund,150.00,Completed,TICKET-017,Festival ticket
+PAY-018,2026-06-02T12:30:00,Aksel Ros,Festival Fund,"150,00",completed,TICKET-018,Festival ticket
+PAY-019,2026-06-02T13:00:00,Josefine Eng,Festival Fund,150.00,completed,TICKET-019,Festival ticket
+PAY-020,2026-06-02T13:30:00,Arthur Sol,Festival Fund,150.00,COMPLETED,TICKET-020,Festival ticket
+PAY-021,2026-06-03T09:00:00,Frida Mose,Festival Fund,"150,00",completed,TICKET-021,Festival ticket
+PAY-022,2026-06-03T09:30:00,Elias Nord,Festival Fund,150.00,completed,TICKET-022,Festival ticket
+PAY-023,2026-06-03T10:00:00,Emma Strand,Festival Fund,150.00,Completed,TICKET-023,Festival ticket
+PAY-024,2026-06-03T10:30:00,Anton Hvid,Festival Fund,"150,00",completed,TICKET-024,Festival ticket
+PAY-025,2026-06-03T11:00:00,Caroline Fisk,Festival Fund,150.00,completed,TICKET-025,Festival ticket
+PAY-026,2026-06-03T11:30:00,Theo Gren,Festival Fund,150.00,COMPLETED,TICKET-026,Festival ticket
+PAY-027,2026-06-03T12:00:00,Alberte Kvist,Festival Fund,"150,00",completed,TICKET-027,Festival ticket
+PAY-028,2026-06-03T12:30:00,Felix Bro,Festival Fund,150.00,completed,TICKET-028,
+PAY-029,2026-06-03T13:00:00,Lily Vest,Festival Fund,150.00,Completed,TICKET-029,Festival ticket
+PAY-030,2026-06-03T14:00:00,Oliver Falk,Festival Fund,"150,00",completed,TICKET-030,Ticket for my friend Robin
+PAY-031,2026-06-04T10:00:00,Little Lantern Cafe,Festival Fund,500.00,COMPLETED,SPONSOR-01,Community sponsorship
+PAY-032,2026-06-05T14:00:00,Festival Fund,Party Nest,"870,00",completed,FLAMINGOS-01,87 inflatable flamingos
+PAY-033,2026-06-06T15:00:00,Festival Fund, Oliver Falk ,600.00,Completed,SPEAKER-01,Reimburse personal speaker deposit outlay
+PAY-034,2026-06-07T16:00:00,Festival Fund,Snack Shed,900.00,completed,SNACKS-01,Snacks for festival
+PAY-035,2026-06-08T11:00:00,Festival Fund,Paper Parade,"300,00",COMPLETED,POSTERS-01,Poster printing
+PAY-036,2026-06-08T12:00:00,Festival Fund,Useful Things,200.00,completed,SUPPLIES-01,Tape and cable covers
+PAY-037,2026-06-11T09:00:00,Party Nest,Festival Fund,"870,00",Pending,FLAMINGOS-01,Approved return refund awaiting settlement
+PAY-003,2026-06-01T11:00:00,Freja Lund,Festival Fund,"150,00",completed,TICKET-003,Festival ticket
+PAY-019,2026-06-02T13:00:00,Josefine Eng,Festival Fund,150.00,completed,TICKET-019,Festival ticket

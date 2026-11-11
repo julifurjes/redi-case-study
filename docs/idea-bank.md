@@ -1,5 +1,9 @@
 # Workshop Idea Bank
 
+**Historical planning notes.** The selected case is now
+[The festival fund fiasco](student-brief.md). The recommendations below
+record earlier alternatives, not the current workshop plan.
+
 Early options for the ReDI Python workshop. These are starting points, not settled story or dataset decisions. Every person, organization, and record should be fictional.
 
 ## What makes a good case

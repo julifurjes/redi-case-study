@@ -1,0 +1,6 @@
+# Notebook interface; the core CSV investigation needs only the Python standard library.
+jupyterlab>=4,<5
+ipykernel>=6,<8
+# Optional stretch exercises.
+pandas>=2.2,<4
+matplotlib>=3.9,<4
