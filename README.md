@@ -34,8 +34,9 @@ install the Python and Jupyter extensions, open the notebook, and select
 the `.venv` interpreter as its kernel. The notebook needs only the standard
 library for core tasks; Pandas and Matplotlib are optional stretch tools.
 
-## Submit
+## Enjoy the investigation
 
-Your runnable code, a cleaning log, labelled numerical results, and a short
-evidence-based verdict. An optional chart can support your explanation.
+Work at your own pace. You are done when you are happy with your investigation
+and can explain what happened using the evidence. There is nothing to hand in.
+An optional chart can help you explore your findings.
 Do not edit the source CSVs to make your code work.

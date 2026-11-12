@@ -38,28 +38,29 @@ statuses and decimal separators are inconsistent. An empty optional message
 is valid. CSV quotes protect amounts containing commas: use a CSV reader,
 not `line.split(",")`.
 
-## Investigation (about 45 minutes)
+## Investigation
 
-Work in pairs: one person drives, the other checks evidence. Swap halfway.
+Work at your own pace and have fun exploring. If you work in pairs, take turns
+driving and checking the evidence. There is nothing to hand in.
 
-1. **Inspect (5 min).** Load all three files. Print their columns, row counts,
+1. **Inspect.** Load all three files. Print their columns, row counts,
    and a few examples. Keep originals unchanged.
-2. **Clean (10 min).** Normalize names, statuses, and amounts. Investigate
+2. **Clean.** Normalize names, statuses, and amounts. Investigate
    repeated IDs before removing exact duplicate records. Record each decision.
-3. **Reconcile (10 min).** Calculate completed incoming and outgoing totals
+3. **Reconcile.** Calculate completed incoming and outgoing totals
    separately, then the balance. Find the unpaid DJ invoice and calculate how
    much would remain, or how much more is needed.
-4. **Explain (10 min).** Match outgoing references to receipts and read the
+4. **Explain.** Match outgoing references to receipts and read the
    chat. Explain the flamingo refund and the two different speaker-deposit
    movements. Separate current cash from a future scenario.
-5. **Report (10 min).** Submit your code and a short evidence-based verdict.
-   A small chart is welcome if time allows.
+5. **Reflect.** What do you think happened, and what evidence supports it?
+   Try a small chart if you feel like it.
 
 Use the scaffold notebook or an ordinary Python script. Lists, dictionaries,
 functions, loops, and conditionals are sufficient; Pandas is optional.
 Open `docs/hints.md` only when stuck.
 
-## Your evidence report
+## Questions to explore
 
 - Raw and cleaned payment row counts, cleaning decisions, and why two payments
   from the same person are not automatically duplicates.
@@ -68,8 +69,10 @@ Open `docs/hints.md` only when stuck.
 - A reference-based explanation of spending, refund status and timing, and
   Oliver's reimbursement versus the rental company's deposit.
 - A clearly labelled **if the approved refund settles** calculation.
-- A 3-5 sentence conclusion: what is established, what is uncertain, and a
-  practical next step. Do the records establish theft?
+- What is established, what is uncertain, and what could happen next?
+  Do the records establish theft?
+
+You are done when you feel ready and can explain your findings.
 
 ## Optional stretches
 
