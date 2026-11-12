@@ -1,75 +1,41 @@
-# ReDI Python Workshop
+# ReDI Python Workshop: The festival fund fiasco
 
-A playful investigation workshop for students in the final third of an introductory Python course.
+Investigate a fictional festival fund using three small CSV files.
+Start with [the case brief](docs/student-brief.md), then open
+[the scaffold notebook](notebooks/festival-investigation.ipynb).
+[Hints](docs/hints.md) are available when you need them.
 
-**Case: The festival fund fiasco.** Students must establish how much money is
-actually available, whether the DJ can be paid, and what explains the shortfall.
-The materials are ready for a facilitator dry run; classroom timing has not
-yet been validated.
+## Setup
 
-Students will use Python to explore evidence, clean messy data, and explain what they find. The aim is a fun mystery with a clear payoff and room for different approaches.
+Use Python 3.10 or newer. Extract the entire ZIP before opening the notebook.
+Keep its folders together.
 
-## Learning goals
+**No-install route:** write a Python script using `csv`, `decimal`, and
+`pathlib` from the standard library. Run it from the extracted project root
+with `python your_script.py` (or `python3` if that is your Python command).
+The case brief lists all tasks; the notebook is not required.
 
-- Read and explore data from files.
-- Use functions, lists, dictionaries, conditionals, and loops.
-- Identify missing values, inconsistent formats, and duplicate records.
-- Combine clues across datasets using Pandas where useful.
-- Communicate findings with a short explanation and an optional chart.
-- Distinguish evidence from assumptions and unresolved questions.
-
-## Repository structure
-
-| Location | Contents |
-| --- | --- |
-| [data/](data/) | Three fictional CSVs: payments, receipts, chat |
-| [Student brief](docs/student-brief.md) | Account rules, tasks, and submission criteria |
-| [Scaffold notebook](notebooks/festival-investigation.ipynb) | Loading code, investigation prompts, and student TODOs |
-| [Hints](docs/hints.md) | Progressive help without final totals |
-| [Student setup](STUDENT_README.md) | Notebook and no-install Python routes |
-| [Facilitator guide](docs/facilitator-guide.md) | **Spoilers:** answer key, timing, rubric, misconceptions |
-| [scripts/](scripts/) | Reference reconciliation and student ZIP builder |
-| [tests/](tests/) | Dataset, arithmetic, notebook, and distribution checks |
-
-The [idea bank](docs/idea-bank.md) is historical background, not the current
-workshop specification.
-
-## Workshop design
-
-- Give students a mystery to solve and characters to care about.
-- Make the core task achievable, with optional hints and stretch challenges.
-- Use entirely fictional data suitable for sharing with external students.
-- Keep the company connection to familiar, publicly known concepts.
-- Introduce new evidence partway through if it makes the investigation more fun.
-
-## Getting started
-
-Use **Python 3.10+**. The core case and all facilitator checks use only the
-standard library. Run from the repository root:
+**Notebook route:** from the extracted project root:
 
 ```sh
-python3 -m unittest discover -s tests -v
-python3 scripts/solve_case.py
-python3 scripts/build_student_pack.py
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m jupyterlab
 ```
 
-**Facilitators:** the solver prints spoilers. Share only the generated
-`dist/festival-student-pack.zip`, not this repository: solutions and tests
-deliberately remain outside the student pack. The builder refuses to
-overwrite an existing archive; supply `--output path/to/new-pack.zip` to
-create another version.
+On Windows, use `py -m venv .venv` and activate with
+`.venv\Scripts\Activate.ps1` in PowerShell instead of `source`.
+If activation is restricted, use `.venv\Scripts\python.exe` directly for
+the pip and Jupyter commands.
 
-**Students:** follow [the setup guide](STUDENT_README.md) for a no-install
-script route or Jupyter/VS Code notebook setup. Optional notebook and
-stretch dependencies are in [requirements.txt](requirements.txt).
+Open `notebooks/festival-investigation.ipynb` in JupyterLab. In VS Code,
+install the Python and Jupyter extensions, open the notebook, and select
+the `.venv` interpreter as its kernel. The notebook needs only the standard
+library for core tasks; Pandas and Matplotlib are optional stretch tools.
 
-## Workshop scope
+## Submit
 
-- Three small CSV files with a controlled set of cleaning issues.
-- Approximately 45 minutes, or 30 minutes with loading prepared and no chart.
-- Standard-library core, optional Pandas merge and charting stretches.
-- Current cash, future refunds, and evidence versus assumptions kept distinct.
-- No local server needed; after setup the investigation works offline.
-
-Before classroom use, dry-run the notebook in the students' environment and
-adjust timing for their experience.
+Your runnable code, a cleaning log, labelled numerical results, and a short
+evidence-based verdict. An optional chart can support your explanation.
+Do not edit the source CSVs to make your code work.

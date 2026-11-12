@@ -7,7 +7,7 @@ from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
 STUDENT_FILES = (
-    ("STUDENT_README.md", "README.md"),
+    ("README.md", "README.md"),
     ("docs/student-brief.md", "docs/student-brief.md"),
     ("docs/hints.md", "docs/hints.md"),
     ("data/payments.csv", "data/payments.csv"),
