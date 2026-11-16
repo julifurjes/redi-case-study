@@ -42,6 +42,9 @@ not `line.split(",")`.
 
 Work at your own pace and have fun exploring. If you work in pairs, take turns
 driving and checking the evidence. There is nothing to hand in.
+For the 30-minute exercise, discuss the evidence and your verdict aloud.
+Completing the full evidence table and writing a 3–5 sentence verdict are
+optional if time allows.
 
 1. **Inspect.** Load all three files. Print their columns, row counts,
    and a few examples. Keep originals unchanged.
